@@ -1,0 +1,190 @@
+/*menu custom*/
+.logo_mobile{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.wrapper, .over, .menuRightMain, .homeSer .tit:after, .homeSer .tit:before, .navNews {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+body.open{
+    overflow: hidden;
+    position: relative;
+}
+
+.menu_mobi{
+    border-radius: 5px;
+    float: left;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: none;
+    color: #333;
+    z-index: 12;
+}
+.drop-menu label{
+    font-size: 23px;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+#hamburger:before,#hamburger:after,#hamburger span{background: #333;content:'';display:block;width: 100%;height:3px;position:absolute;left: 0px;}
+#hamburger:before{top: 3px;}
+#hamburger span{top:10px;}
+#hamburger:after{top: 17px;}
+#hamburger:before,#hamburger:after,#hamburger span{-webkit-transition:none 0.5s ease 0.5s;transition:none 0.5s ease 0.5s;-webkit-transition-property:transform,top,bottom,left,opacity;transition-property:transform,top,bottom,left,opacity;}
+#hamburger{display:block;width: 22px;height:23px;position:relative;float: left;color: #000;}
+#hamburger.xmenu span {
+    left: -50px;
+    opacity: 0;
+}
+#hamburger.xmenu:before {
+    transform: rotate( 45deg );
+    top: 10px;
+}
+#hamburger.xmenu:after {
+    transform: rotate( -45deg );
+    top: 10px;
+}
+
+.menuRightMain {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  bottom: 0;
+  width: 280px;
+  z-index: 1100000;
+  background: #212121;
+  }
+
+.menuRightMain.open {
+  left: 0; }
+
+.closeMenu {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background: #999;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px; }
+
+.closeMenu:hover {
+  background: rgba(0, 0, 0, 0.5); }
+
+.openMenu {
+  color: #333;
+  cursor: pointer;
+}
+.menuRight {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  padding: 0 15px;
+  width: auto;
+  overflow: auto; }
+
+.menuRight ul {
+   margin: 0;
+   padding: 0; }
+.menuRight > ul > li {
+   position: relative;
+   border-bottom: solid 1px #ccc;
+   list-style: none;
+   margin: 0;
+   padding: 4px 0;
+}
+.menuRight ul li a{
+  text-decoration: none;
+}
+.menuRight > ul > li > a {
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 35px;
+    text-decoration: none;
+    color: #fff;
+    }
+.menuRight > ul > li  ul {
+    display: none;
+    margin-bottom: 10px; }
+.menuRight > ul > li > ul  li {
+    list-style: none;
+    padding-right: 25px;
+    margin-left: 10px;
+    border-bottom: solid 1px #ccc;
+    position: relative;
+    }
+.menuRight  ul  li  ul  li:after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: -10px;
+    height: 1px;
+    width: 5px;
+    background: #ccc;
+    }
+.menuRight > ul > li > ul  li  a {
+  display: block;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ababab;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.menuRight > ul li:last-child {
+   border: none; 
+}
+.menuRight .bt_login {
+   display: block;
+   color: #666;
+   margin-top: 15px;
+   font-size: 15px; }
+.menuRight .bt_login i {
+    margin-right: 5px; 
+}
+
+.over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000000;
+    visibility: hidden;
+    opacity: 0;
+}
+.over.open {
+    opacity: 1;
+    visibility: visible;
+}
+.menuRight > ul > li i{
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    right: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+.rotate{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
